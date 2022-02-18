@@ -1,0 +1,21 @@
+{
+  "exams": [
+    {
+      "title": "biology",
+      "startDate": "2022-02-20T23:00:00.000Z",
+      "duration": 60,
+      "resources": []
+    },
+    {
+      "title": "English",
+      "startDate": "2022-02-21T23:00:00.000Z",
+      "duration": 120,
+      "resources": ["https://www.shakespeare.org.uk/explore-shakespeare/shakespedia/william-shakespeare/william-shakespeare-biography/"]
+    },
+    {
+      "title": "Music",
+      "startDate": "2022-02-22T23:00:00.000Z",
+      "duration": 30
+    }
+  ]
+}

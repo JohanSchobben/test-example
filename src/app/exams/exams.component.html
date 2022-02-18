@@ -1,0 +1,20 @@
+<h1>Exams</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Planned for</th>
+    <th>Duration</th>
+    <th>Resources</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let exam of exams">
+    <td>{{exam.title}}</td>
+    <td>{{exam.startDate | date:"dd-MM-yyyy"}}</td>
+    <td>{{exam.duration}}</td>
+    <td>{{exam.resources | amount }}</td>
+  </tr>
+  </tbody>
+</table>
