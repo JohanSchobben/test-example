@@ -4,8 +4,16 @@ import { ExamsComponent } from './exams.component';
 import {ExamsService} from "../exams.service";
 import {from} from "rxjs";
 import {By} from "@angular/platform-browser";
-import {AmountPipe} from "../amount.pipe";
+import {Pipe} from "@angular/core";
 
+@Pipe({
+  name: 'amount'
+})
+class AmountPipeStub {
+  transform (value:any) {
+    return value;
+  }
+}
 
 describe('ExamsComponent', () => {
   let component: ExamsComponent;
@@ -14,7 +22,7 @@ describe('ExamsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ExamsComponent, AmountPipe ],
+      declarations: [ ExamsComponent, AmountPipeStub ],
       providers: [
         { provide: ExamsService, useValue: {getExams: () => {
               return from([]);

@@ -24,6 +24,7 @@ describe('AmountPipe', () => {
     expect(result).toEqual("none")
   });
 
+
   it('should return none if the resource is undefined', function () {
     const pipe = new AmountPipe();
     const data = undefined;
